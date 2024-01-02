@@ -17,7 +17,7 @@ class GetRequester:
             programs_list.append(program)
         return programs_list
 
-url = "https://learn-co-curriculum.github.io/json-site-example/endpoints/people.json"
+url = "https://api.jikan.moe/v4/recommendations/anime"
 programs_requester = GetRequester(url)
 
 data_sets = programs_requester.load_json()
